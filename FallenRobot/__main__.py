@@ -72,15 +72,15 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """ Hey there {}! My name {}  is - I'm here to help you manage your groups! Hit  **/help to find out more about how to use me to my full potential.
 
-Join my [news channel](https://t.me/Tanu_update) to get information on all the latest updates..*
-─────────────────────────────────.*
+Join my [news channel](https://t.me/TeamTrojans) to get information on all the latest updates..*
+──────────────────────────────.*
 """
 
 
 buttons = [
     [
         InlineKeyboardButton(
-            text=" ADD ME BABY ", url=f"t.me/{BOT_USERNAME}?startgroup=new"
+            text="➕ SUMMON ME ➕", url=f"t.me/{BOT_USERNAME}?startgroup=new"
         ),
     ],
     [
@@ -89,7 +89,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="About", callback_data="fallen_"),
-        InlineKeyboardButton(text="Dev", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="Owner", url=f"tg://user?id={OWNER_ID}"),
     ],
 ]
 
