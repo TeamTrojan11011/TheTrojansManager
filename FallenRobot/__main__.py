@@ -714,15 +714,15 @@ def main():
                 chat_id=f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
-ㅤ🥀🥀ᴊᴀɪ sʜʀᴇᴇ ʀᴀᴀᴍ ❣️ 
-{BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...
+ㅤ♞ Team Of Trojans ♘
+{BOT_NAME} Is Alive Dear.!
 
-┏•❅────✧❅✦❅✧────❅•┓
-ㅤ★ **ᴘʏᴛʜᴏɴ :** `{y()}`
-ㅤ★ **ʟɪʙʀᴀʀʏ :** `{telever}`
-ㅤ★ **ᴛᴇʟᴇᴛʜᴏɴ :** `{tlhver}`
-ㅤ★ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
-┗•❅────✧❅✦❅✧────❅•┛""",
+┏─────────────────┓
+ㅤ♞ **Pʏᴛʜᴏɴ :** `{y()}`
+ㅤ♞ **Lɪʙʀᴀʀʏ :** `{telever}`
+ㅤ♞ **Tᴇʟᴇᴛʜᴏɴ :** `{tlhver}`
+ㅤ♞ **Pʏʀᴏɢʀᴀᴍ :** `{pyrover}`
+┗─────────────────┛""",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
