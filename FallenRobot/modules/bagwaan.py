@@ -317,6 +317,5 @@ __help__ = """
  ❍ /sitaji -  ᴍᴀᴀ sɪᴛᴀ
  ❍ /hanumanji - ᴊᴀɪ ʜᴀɴᴜᴍᴀᴀɴ ᴊɪ
  
-☆............𝙱𝚈 » [KRISHNA](https://t.me/NO_LOVE_I_HATE_LOVE)............☆
 """
 __mod_name__ = "♨️ʙᴀɢᴡᴀᴀɴ♨️"
