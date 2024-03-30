@@ -7,12 +7,10 @@ from FallenRobot import dispatcher
 from FallenRobot.modules.helper_funcs.alternate import send_message
 from FallenRobot.modules.helper_funcs.chat_status import user_admin
 
-__mod_name__ = "📍𝙿ʜᴏɴᴇ📍"
+__mod_name__ = "Pʜᴏɴᴇ"
 __help__ = """
-» /phone ꜰɪʟʟ ᴀɴʏ ᴍᴏʙɪʟᴇ ɴᴜᴍʙᴇʀ ᴛᴏ ᴄʜᴇᴄᴋ ɪɴꜰᴏ.
+» /phone Fɪʟʟ ᴀɴʏ ᴍᴏʙɪʟᴇ ɴᴜᴍʙᴇʀ ᴛᴏ ᴄʜᴇᴄᴋ ɪɴꜰᴏ.
 
-
-☆............𝙱𝚈 » [KRISHNA](@NO_LOVE_I_HATE_LOVE)............☆"""
 
 
 @run_async
