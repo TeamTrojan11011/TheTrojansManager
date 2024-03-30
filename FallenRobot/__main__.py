@@ -73,7 +73,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """ Hey there {}! My name {}  is - I'm here to help you manage your groups! Hit  **/help to find out more about how to use me to my full potential.
 
 Join my [news channel](https://t.me/TeamTrojans) to get information on all the latest updates..*
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖.*
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖.*
 """
 
 
