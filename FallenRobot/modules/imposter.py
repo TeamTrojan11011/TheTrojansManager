@@ -2,7 +2,7 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from HuTao.database.imposter_db import (
+from FallenRobot.database.imposter_db import (
     add_userdata,
     usr_data,
     get_userdata,
@@ -10,9 +10,9 @@ from HuTao.database.imposter_db import (
     impo_on,
     impo_off,
 )
-from HuTao import app
-from HuTao.Config import COMMAND_HANDLER
-from HuTao.helpers.status import user_admin
+from FallenRobot import app
+from FallenRobot.Config import COMMAND_HANDLER
+from FallenRobot.helpers.status import user_admin
 
 @app.on_message(filters.group & ~filters.bot & ~filters.via_bot, group=1)
 async def chk_usr(_, message: Message):
