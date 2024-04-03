@@ -150,12 +150,12 @@ def get_id(update: Update, context: CallbackContext):
     else:
         if chat.type == "private":
             msg.reply_text(
-                f"ʏᴏᴜʀ ᴜsᴇʀ ɪᴅ ɪs <code>{chat.id}</code>.", parse_mode=ParseMode.HTML
+                f"Yᴏᴜʀ Usᴇʀ ɪᴅ is <code>{chat.id}</code>.", parse_mode=ParseMode.HTML
             )
 
         else:
             msg.reply_text(
-                f"ᴛʜɪs ɢʀᴏᴜᴩ's ɪᴅ ɪs <code>{chat.id}</code>.", parse_mode=ParseMode.HTML
+                f"Tʜɪs Gʀᴏᴜᴩ's ɪᴅ is <code>{chat.id}</code>.", parse_mode=ParseMode.HTML
             )
 
 
@@ -178,22 +178,22 @@ async def group_info(event) -> None:
         )
         return
     msg = f"**ɪᴅ**: `{entity.id}`"
-    msg += f"\n**ᴛɪᴛʟᴇ**: `{entity.title}`"
+    msg += f"\n**Tɪᴛʟᴇ**: `{entity.title}`"
     msg += f"\n**ᴅᴄ**: `{entity.photo.dc_id}`"
-    msg += f"\n**ᴠɪᴅᴇᴏ ᴩғᴩ**: `{entity.photo.has_video}`"
-    msg += f"\n**sᴜᴩᴇʀɢʀᴏᴜᴩ**: `{entity.megagroup}`"
-    msg += f"\n**ʀᴇsᴛʀɪᴄᴛᴇᴅ**: `{entity.restricted}`"
-    msg += f"\n**sᴄᴀᴍ**: `{entity.scam}`"
-    msg += f"\n**sʟᴏᴡᴍᴏᴅᴇ**: `{entity.slowmode_enabled}`"
+    msg += f"\n**Vɪᴅᴇᴏ ᴩғᴩ**: `{entity.photo.has_video}`"
+    msg += f"\n**Sᴜᴩᴇʀɢʀᴏᴜᴩ**: `{entity.megagroup}`"
+    msg += f"\n**Rᴇsᴛʀɪᴄᴛᴇᴅ**: `{entity.restricted}`"
+    msg += f"\n**Sᴄᴀᴍ**: `{entity.scam}`"
+    msg += f"\n**Sʟᴏᴡᴍᴏᴅᴇ**: `{entity.slowmode_enabled}`"
     if entity.username:
-        msg += f"\n**ᴜsᴇʀɴᴀᴍᴇ**: {entity.username}"
-    msg += "\n\n**ᴍᴇᴍʙᴇʀ sᴛᴀᴛs:**"
-    msg += f"\nᴀᴅᴍɪɴs: `{len(totallist)}`"
-    msg += f"\nᴜsᴇʀs: `{totallist.total}`"
-    msg += "\n\n**ᴀᴅᴍɪɴs ʟɪsᴛ:**"
+        msg += f"\n**Usᴇʀɴᴀᴍᴇ**: {entity.username}"
+    msg += "\n\n**Mᴇᴍʙᴇʀ Sᴛᴀᴛs:**"
+    msg += f"\nAᴅᴍɪɴs: `{len(totallist)}`"
+    msg += f"\nUsᴇʀs: `{totallist.total}`"
+    msg += "\n\n**Aᴅᴍɪɴs Lɪsᴛ:**"
     for x in totallist:
         msg += f"\n• [{x.id}](tg://user?id={x.id})"
-    msg += f"\n\n**ᴅᴇsᴄʀɪᴩᴛɪᴏɴ**:\n`{ch_full.full_chat.about}`"
+    msg += f"\n\n**Dᴇsᴄʀɪᴩᴛɪᴏɴ**:\n`{ch_full.full_chat.about}`"
     await event.reply(msg)
 
 
@@ -237,7 +237,7 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>ᴀᴩᴩʀᴀɪsɪɴɢ...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>Appraising Result...</code>", parse_mode=ParseMode.HTML)
 
     text = (
         f"ㅤ ㅤㅤ      「 Analyzed Results」 \n•♞───────────────♘\n"
@@ -251,10 +251,10 @@ def info(update: Update, context: CallbackContext):
     if user.username:
         text += f"\n➢ <b>Usᴇʀɴᴀᴍᴇ:</b> @{html.escape(user.username)}"
 
-    text += f"\n➢ <b>ʟɪɴᴋ:</b> {mention_html(user.id, 'link')}"
+    text += f"\n➢ <b>Lɪɴᴋ:</b> {mention_html(user.id, 'link')}"
 
     if chat.type != "private" and user_id != bot.id:
-        _stext = "\n➢ <b>ᴩʀᴇsᴇɴᴄᴇ:</b> <code>{}</code>"
+        _stext = "\n➢ <b>Pʀᴇsᴇɴᴄᴇ:</b> <code>{}</code>"
 
         afk_st = is_afk(user.id)
         if afk_st:
