@@ -240,21 +240,21 @@ def info(update: Update, context: CallbackContext):
     rep = message.reply_text("<code>ᴀᴩᴩʀᴀɪsɪɴɢ...</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"ㅤ ㅤㅤ      ✦ ᴜsᴇʀ ɪɴғᴏ ✦\n•❅─────✧❅✦❅✧─────❅•\n"
-        f"➻ <b>ᴜsᴇʀ ɪᴅ:</b> <code>{user.id}</code>\n"
-        f"➻ <b>ғɪʀsᴛ ɴᴀᴍᴇ:</b> {html.escape(user.first_name)}"
+        f"ㅤ ㅤㅤ      「 Analyzed Results」 \n•♞───────────────♘\n"
+        f"➢ <b>Usᴇʀ ɪᴅ:</b> <code>{user.id}</code>\n"
+        f"➢ <b>Fɪʀsᴛ Nᴀᴍᴇ:</b> {html.escape(user.first_name)}"
     )
 
     if user.last_name:
-        text += f"\n➻ <b>ʟᴀsᴛ ɴᴀᴍᴇ:</b> {html.escape(user.last_name)}"
+        text += f"\n➢ <b>Lᴀsᴛ Nᴀᴍᴇ:</b> {html.escape(user.last_name)}"
 
     if user.username:
-        text += f"\n➻ <b>ᴜsᴇʀɴᴀᴍᴇ:</b> @{html.escape(user.username)}"
+        text += f"\n➢ <b>Usᴇʀɴᴀᴍᴇ:</b> @{html.escape(user.username)}"
 
-    text += f"\n➻ <b>ʟɪɴᴋ:</b> {mention_html(user.id, 'link')}"
+    text += f"\n➢ <b>ʟɪɴᴋ:</b> {mention_html(user.id, 'link')}"
 
     if chat.type != "private" and user_id != bot.id:
-        _stext = "\n➻ <b>ᴩʀᴇsᴇɴᴄᴇ:</b> <code>{}</code>"
+        _stext = "\n➢ <b>ᴩʀᴇsᴇɴᴄᴇ:</b> <code>{}</code>"
 
         afk_st = is_afk(user.id)
         if afk_st:
